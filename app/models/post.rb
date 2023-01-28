@@ -4,12 +4,13 @@ class Post < ApplicationRecord
   has_many :likes
   validates :user, presence: true
   validates :title, presence: true
-  validates :title, length: { maximum: 250, message: "should be less than 250 characters" }
+  validates :title, length: { maximum: 250, message: 'should be less than 250 characters' }
   validates :comments_counter, numericality: { greater_than_or_equal_to: 0, only_integer: true }
   validates :likes_counter, numericality: { greater_than_or_equal_to: 0, only_integer: true }
 
   def posts_increment
     return unless user
+
     user.increment(:posts_count)
     puts "Incremented user's posts_count to #{user.posts_count}"
   end
