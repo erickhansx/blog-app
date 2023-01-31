@@ -147,10 +147,6 @@ You can deploy this project using:
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
-
 ## 👥 Author <a name="authors"></a>
 
 👤 **Erick Hans Martinez**
