@@ -4,6 +4,7 @@ class Post < ApplicationRecord
   has_many :likes
   validates :user, presence: true
   validates :title, presence: true
+  validates :text, presence: true
   validates :title, length: { maximum: 250, message: 'should be less than 250 characters' }
   validates :comments_counter, numericality: { greater_than_or_equal_to: 0, only_integer: true }
   validates :likes_counter, numericality: { greater_than_or_equal_to: 0, only_integer: true }
