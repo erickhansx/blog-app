@@ -1,1 +1,28 @@
+<div class="main">
 <h1>Showing user</h1>
+  <div class="users_container">
+    <div class="square"></div>
+    <div class= "user-info">  
+      <h1><%= @user.name %></h1> 
+      <p class="posts-number"><strong>Number of posts:</strong><%= @user.posts_count %></p>  
+    </div>
+  </div>
+  <div class= "user-bio">
+    <span>Bio</span>
+    <p>
+      <%= @user.bio %>
+    </p>
+  </div>
+  <% @user.recent.each do |post| %>
+    <div class="user-posts">
+      <p><%=post.title %></p>
+      <p><%=post.text %></p>
+      <div class="counters">
+        <p><strong>Likes:</strong> <%=post.likes_counter%></p>
+        <p><strong>Comments:</strong> <%=post.comments_counter%></p>
+      </div>
+    </div>
+    <% end %>
+    <%= link_to "<button>See All Posts</button>".html_safe, user_posts_url(@user), :class => 'btn_posts' %>
+</div>
+  

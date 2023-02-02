@@ -11,11 +11,20 @@ class Post < ApplicationRecord
   def posts_increment
     return unless user
 
-    user.increment(:posts_count)
+    user.increment!(:posts_count)
     puts "Incremented user's posts_count to #{user.posts_count}"
   end
 
   def recent
     comments.order(created_at: :desc).limit(5)
+  end
+
+  after_create :increment_posts_count
+
+  def increment_posts_count
+    puts "Incrementing posts_count for user #{user.id}"
+    user.increment!(:posts_count)
+    user.save
+    user.reload
   end
 end
