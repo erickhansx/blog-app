@@ -1,1 +1,19 @@
 <h1>Posts showing</h1>
+<div class="main post-main">
+  <div class="post-header">
+    <span><strong>Post #<%= @post.id %> by <%= @user.name %> </strong></span>
+  </div>
+  <div class="post-body">
+    <p><%= @post.text %></p>
+  </div>
+</div>
+
+<% if @post.comments_counter > 0 %>
+  <% @comments.each do |comment| %>
+    <div class="commenter">
+      <% author = User.find(comment.author_id) %>
+      <p><%= author.name %>:</p>
+      <p><%= comment.text %></p>
+    </div>
+  <% end %>
+<% end %>
