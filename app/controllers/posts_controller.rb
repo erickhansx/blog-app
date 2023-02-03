@@ -17,12 +17,10 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(params.require(:post).permit(:title, :text).merge(author_id: current_user.id))
     if @post.save
-    flash[:notice] = "Post saved!"
-    redirect_to user_posts_path(current_user.id)
+      flash[:notice] = 'Post saved!'
+      redirect_to user_posts_path(current_user.id)
     else
       render :new
     end
-    
   end
-
 end
