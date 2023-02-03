@@ -7,6 +7,8 @@
     <p><%= @post.text %></p>
   </div>
 </div>
+<%= button_to 'Like', user_post_likes_path(@user, @post), method: :post %>
+<p><%= @post.likes.count %> <%= (@post.likes.count) == 1 ? 'Like' : 'Likes'%></p>
 
 <% if @post.comments_counter > 0 %>
   <% @comments.each do |comment| %>
