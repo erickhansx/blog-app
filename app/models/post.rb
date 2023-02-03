@@ -1,9 +1,10 @@
 class Post < ApplicationRecord
   belongs_to :user, class_name: 'User', foreign_key: 'author_id'
   has_many :comments
-  has_many :likes
+  has_many :likes, dependent: :destroy
   validates :user, presence: true
   validates :title, presence: true
+  validates :text, presence: true
   validates :title, length: { maximum: 250, message: 'should be less than 250 characters' }
   validates :comments_counter, numericality: { greater_than_or_equal_to: 0, only_integer: true }
   validates :likes_counter, numericality: { greater_than_or_equal_to: 0, only_integer: true }

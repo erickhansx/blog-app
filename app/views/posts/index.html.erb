@@ -3,7 +3,8 @@
   <div class="square"></div>
   <div class= "user-info">  
     <h1><%= @user.name %></h1> 
-    <p class="posts-number"><strong>Number of posts:</strong><%= @user.posts_count %></p>  
+    <p class="posts-number"><strong>Number of posts:</strong><%= @user.posts_count %></p>
+
   </div>
 </div>
 <% @user.posts.each do |post| %>
@@ -12,7 +13,7 @@
   <p><%=post.title %></p>
   <p><%=post.text %></p>
   <div class="counters">
-    <p><strong>Likes:</strong> <%=post.likes_counter%></p>
+    <p><strong><%= post.likes.count %> <%= (post.likes.count) <= 1 ? 'Like' : 'Likes'%></strong></p>  
     <p><strong>Comments:</strong> <%=post.comments_counter%></p>
   </div>
 </div>
