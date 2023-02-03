@@ -7,8 +7,12 @@
     <p><%= @post.text %></p>
   </div>
 </div>
-<%= button_to 'Like', user_post_likes_path(@user, @post), method: :post %>
+
+<%= button_to 'Like', user_post_likes_path(@user, @post), method: :post, class: "btn btn-primary" %>
+
 <p><%= @post.likes.count %> <%= (@post.likes.count) == 1 ? 'Like' : 'Likes'%></p>
+
+<div class="comments">
 
 <% if @post.comments_counter > 0 %>
   <% @comments.each do |comment| %>
@@ -19,3 +23,6 @@
     </div>
   <% end %>
 <% end %>
+  <%= link_to "Add Comment", new_user_post_comment_path(@user, @post), class: "btn btn-primary" %>
+
+</div>
