@@ -1,9 +1,9 @@
 <div class="main">
   <h1>User index</h1>
   <% @users.each do |user| %>
-    <%= link_to user_path(id: user.id) do %>
+    <%= link_to user_path(id: user.id), class:'user-link' do %>
       <div class="users_container user_wrap" >
-          <div class="square"></div>
+          <div class="square"><img src="<%= user.photo %>"></div>
           <div class= "user-info">  
             <h1><%= user.name %></h1> 
             <p class="posts-number"><strong>Number of posts: </strong><%= user.posts_count %></p>  
