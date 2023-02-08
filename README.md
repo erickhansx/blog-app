@@ -11,17 +11,21 @@ Things you may want to cover:
 # 📗 Table of Contents
 
 * Ruby version
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
+- [README](#readme)
+- [📗 Table of Contents](#-table-of-contents)
+- [Blog-App ](#blog-app-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
 * System dependencies
 <!-- PROJECT DESCRIPTION -->
@@ -74,6 +78,12 @@ In order to run this project you need:
 - GitHub: [@erickhansx](https://github.com/erickhansx)
 - Twitter: [@TheErickHans](https://twitter.com/TheErickHans)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+
+**👨‍💻 Waris Haleem**
+
+- GitHub: [@iAmWaris97](https://github.com/iAmWaris97)
+- Twitter: [@iAmWaris97](https://twitter.com/iAmWaris97)
+- LinkedIn: [Waris Haleem](https://www.linkedin.com/in/waris-haleem/)
 
 <!-- FUTURE FEATURES -->
 
