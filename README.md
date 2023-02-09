@@ -155,6 +155,12 @@ You can deploy this project using:
 - Twitter: [@TheErickHans](https://twitter.com/TheErickHans)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
+👤 **👨‍💻 Waris Haleem**
+
+- GitHub: [@iAmWaris97](https://github.com/iAmWaris97)
+- Twitter: [@iAmWaris97](https://twitter.com/iAmWaris97)
+- LinkedIn: [Waris Haleem](https://www.linkedin.com/in/waris-haleem/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->

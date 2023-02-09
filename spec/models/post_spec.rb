@@ -24,6 +24,8 @@ RSpec.describe Post, type: :model do
   end
 
   it 'increment the posts_count with posts_increment' do
+    test_user = User.create(name: 'Tom', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher from Mexico.')
+    subject { Post.create(author_id: test_user.id, title: 'Hello', text: 'This is my first post') }
     puts subject.user
     subject.user = test_user
     subject.posts_increment

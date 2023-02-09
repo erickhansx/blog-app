@@ -1,6 +1,8 @@
 <h1>Posts index</h1>
 <div class="users_container">
-  <div class="square"></div>
+  <div class="square">
+    <img src="<%= @user.photo %>">  
+  </div>
   <div class= "user-info">  
     <h1><%= @user.name %></h1> 
     <p class="posts-number"><strong>Number of posts:</strong><%= @user.posts_count %></p>
