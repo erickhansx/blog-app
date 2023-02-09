@@ -11,7 +11,11 @@
   </head>
 
   <body>
-    <%= button_to "Log out", destroy_user_session_path, method: :delete, data: { turbo: false }  %>
+    <div class="auth-btns">
+    <%= button_to "Sign in", new_user_session_path, method: :post, data: { turbo: false }  %>
+    <%= button_to "Sign out", destroy_user_session_path, method: :delete, data: { turbo: false }  %>
+    <%= button_to "Sign up", new_user_registration_path, method: :get, data: { turbo: false }  %>
+    </div>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <% flash.each do |key, value| %>
