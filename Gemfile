@@ -7,6 +7,11 @@ gem 'rspec-core', '~> 3.12.1'
 
 ruby '3.2.0'
 
+# Use the devise gem as the session and account manager for the application
+# :D
+gem 'devise'
+gem 'letter_opener'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.4', '>= 7.0.4.2'
 

@@ -93,3 +93,44 @@ a {
   display: flex;
   justify-content: center;
 }
+
+.auth-btns {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.login #user_email,
+#user_password {
+  min-width: 80vw;
+  border: 3px solid black;
+}
+
+.login-btn input {
+  min-width: 81vw;
+  border: 3px solid black;
+}
+
+.rememberbox input {
+  max-width: 30px;
+}
+
+.links-bottom {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 15px;
+}
