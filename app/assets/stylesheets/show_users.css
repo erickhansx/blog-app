@@ -93,3 +93,39 @@ a {
   display: flex;
   justify-content: center;
 }
+
+.auth-btns {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.login #user_email,
+#user_password {
+  min-width: 250px;
+}
+
+.login-btn input {
+  min-width: 255px;
+  padding: 2px 65px;
+}
+
+.rememberbox input {
+  max-width: 30px;
+}
+
+.links-bottom {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 15px;
+}
