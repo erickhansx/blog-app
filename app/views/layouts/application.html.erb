@@ -11,6 +11,13 @@
   </head>
 
   <body>
+    <% if request.fullpath == "/users/sign_in" %>
+      <style>
+        .auth-btns {
+           display: none;
+          }
+      </style>
+    <% end %>
     <div class="auth-btns">
     <%= button_to "Sign in", new_user_session_path, method: :post, data: { turbo: false }  %>
     <%= button_to "Sign out", destroy_user_session_path, method: :delete, data: { turbo: false }  %>
